@@ -1,5 +1,5 @@
 body {
-    font-family: Raleway, sans-serif;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 p {
     font-size: 14px;
@@ -46,6 +46,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 header {
     background-color: #fff;
     padding-top: 30px;
@@ -65,6 +66,7 @@ header .menu li {
 header .menu li a {
     color: #aaa;
 }
+
 .jumbotron {
     background-image: url(../img/jumbotron.jpg);
     background-size: cover;
@@ -87,6 +89,7 @@ header .menu li a {
     padding: 20px 30px;
     border-radius: 30px;
 }
+
 .services .service {
     width: 33.333333%;
     float: left;
@@ -100,10 +103,11 @@ header .menu li a {
     padding-top: 50px;
     text-align: center;
 }
-.services {
+.services .icon {
     color: #979797;
     margin-bottom: 15px;
 }
+
 .blog {
     clear: both;
     padding-top: 50px;
@@ -122,6 +126,7 @@ header .menu li a {
     float: left;
     margin-right: 30px;
 }
+
 footer {
     clear: both;
     padding-top: 50px;
