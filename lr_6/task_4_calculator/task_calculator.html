@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Task4_calculator</title>
-	<style>
-		.calculator {
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Task4_calculator</title>
+  	<style>
+  		.calculator {
 			width: 410px;
 			height: 630px;
 			border: 4px solid #5f9c9e;
@@ -13,7 +13,7 @@
 			position: absolute;
 			font-family: 'Arial, sans-serif', sans-serif;
 		}
-		.mark {
+  		.mark {
 			position: relative;
 			top: 18px;
 			height: 55px;
@@ -46,81 +46,61 @@
 			height: 49px;
 			background: #5f9c9e;
 		}
-		.button {
-			position: absolute;
-			line-height: 75px; 
-			text-align: center;
+	    .container {
+	      	display: flex;
+      		flex-wrap: wrap;
+      		justify-content: space-between;
+      		align-items: flex-end;
+      		width: 365px;
+      		margin: 0 auto;
+      		margin-top: 75px;
+	    }
+	    .button {
+	      	width: calc(20% - 1px);
+			height: 70px;
+	      	border: 4px solid #5f9c9e;
+			border-radius: 15px;
 			color: #5f9c9e;
 			font-size: 30px;
-			top: 233px;
-		}
-		.button1, .button2, .button3, .button4{
-			width: 70px;
-			height: 70px;
-			border: 4px solid #5f9c9e;
-			border-radius: 15px;
-			position: relative;
-			left: 20px;
-			margin-bottom: 20px;
-		}
-		.button5, .button6, .button7, .button8{
-			width: 70px;
-			height: 70px;
-			border: 4px solid #5f9c9e;
-			border-radius: 15px;
-			position: relative;
-			left: 115px;
-			margin-bottom: 20px;
-		}
-		.button9, .button10, .button11, .button12{
-			width: 70px;
-			height: 70px;
-			border: 4px solid #5f9c9e;
-			border-radius: 15px;
-			position: relative;
-			left: 215px;
-			margin-bottom: 20px;
-		}
-		.button13, .button14, .button15, .button16{
-			width: 70px;
-			height: 70px;
-			border: 4px solid #5f9c9e;
-			border-radius: 15px;
-			position: relative;
-			left: 315px;
-			margin-bottom: 20px;	
-		}
-</style>
+	      	margin-bottom: 20px;
+	      	display: flex;
+			justify-content: center;
+			align-items: center;
+	    }
+	    .button:hover {
+	    	background: #5f9c9e;
+	    	color: white;
+	    }
+	    .button:active {
+	    	background: #426c6e;
+	    	color: white;
+	    	border: 4px solid #426c6e;
+	    }
+	</style>
 </head>
 <body>
 	<div class="calculator">
 		<div class="mark"><span>Casio 3234</span></div>
 		<input type="text" name="input">
 		<div class="block"></div>
-		<div class="button">
-			<div class="button1">7</div>
-			<div class="button2">4</div>
-			<div class="button3">1</div>
-			<div class="button4">,</div>
+		<div class="container">
+			<div class="button">7</div>
+			<div class="button">8</div>
+			<div class="button">9</div>
+			<div class="button">+</div>
+			<div class="button">4</div>
+			<div class="button">5</div>
+			<div class="button">6</div>
+			<div class="button">-</div>
+			<div class="button">1</div>
+			<div class="button">2</div>
+			<div class="button">3</div>
+			<div class="button">/</div>
+			<div class="button">,</div>
+			<div class="button">0</div>
+			<div class="button">=</div>
+			<div class="button">*</div>
 		</div>
-		<div class="button">
-			<div class="button5">8</div>
-			<div class="button6">5</div>
-			<div class="button7">2</div>
-			<div class="button8">0</div>
-		</div>
-		<div class="button">
-			<div class="button9">9</div>
-			<div class="button10">6</div>
-			<div class="button11">3</div>
-			<div class="button12">=</div>
-		</div>
-		<div class="button">
-			<div class="button13">+</div>
-			<div class="button14">-</div>
-			<div class="button15">/</div>
-			<div class="button16">*</div>
-		</div>
-	</div>
+	</div>  	
 </body>
 </html>
